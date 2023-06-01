@@ -2,14 +2,28 @@
 <html>
     <head>
         <title>Meu primeiro projeto</title>
+        <style>
+           ol{
+            color: brown;
+            list-style-type: upper-roman;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: left;
+            line-height: 1.5;
+            background-image: url(testeImg.jpg);
+            background-size: cover;
+           }
+        </style>
     </head>
     <body>
-        <ol>
+        <ol id="nav">
             <li>
-                <a href="https://www.coderhouse.com.br/">Coder House</a>
+                <a id="linkCoder" class="fonteVerde" href="https://www.coderhouse.com.br/">Coder House</a>
             </li>
             <li>
-                <a href="#listaOrdernada">listaOrdernada</a>
+                <a href="#listaOrdenada">listaOrdernada</a>
             </li>
             <li>
                 <a href="#listaNaoOrdenada">listaNaoOrdenada</a>
@@ -31,8 +45,8 @@
             </li>
             
         </ol>
-        <span>Receita de macarrão instataneo</span>
-        <ol id="listaOrdernada">
+        <span id="tituloReceita" class="fonteVermelha">Receita de macarrão instataneo</span>
+        <ol id="listaOrdenada" class="fonteVermelha">
             <li>Abrir o pacote</li>
             <ul>
                 <li>puxe a pontinha do pacote</li>
@@ -98,7 +112,7 @@
         
         <form id="formulario" action="" id="formulario">
             <label for="nome">Nome : </label>
-            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input required type="text" name="nome" id="nome" placeholder="Nome">
             <br>
             <label for="idade">Idade : </label>
             <input type="number" name="idade" id="idade">
