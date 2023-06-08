@@ -74,15 +74,18 @@ ol li:nth-of-type(2n){
     content: " Inicio do conteudo";
     color: red;
 }
-#paragrafo::first-letter{
-    color: aqua;
-    font-size: 60px;
-    font-family: 'Times New Roman', Times, serif;
-}
+
+#paragrafo::first-letter {
+    font-size: 70px;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: -20px;
+  }
+
 #paragrafo::first-line{
     color: green;
 }
-*::selection{
+::selection{
     color: blueviolet;
     background-color: blanchedalmond;
 }
